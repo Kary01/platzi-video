@@ -8,7 +8,7 @@ html {
     font-size: 62.5%;
 }
 
-body{
+body {
     font-family: 'Poppins', sans-serif;
     background: linear-gradient(45deg, #FBDA61 0%, #FF5ACD 100%);
 }
@@ -28,11 +28,11 @@ body{
 }
 
 /*----------------------------------------------------------- nav bar*/
-.header .header__nav{
+.header .header__nav {
     margin-right: 8em;
 }
 
-.header .header__nav .header__nav--profile{
+.header .header__nav .header__nav--profile {
     display: flex;
     align-items: center;
     width: 70px;
@@ -41,12 +41,12 @@ body{
     font-weight: 400;
 }
 
-.header .header__nav .header__nav--profile img{
+.header .header__nav .header__nav--profile img {
     width: 50px;
     margin-right: 1em;
 }
 
-.header .header__nav .header__nav--menu{
+.header .header__nav .header__nav--menu {
     display: none;
     width: 100px;
     text-align: right;
@@ -54,24 +54,24 @@ body{
     position: absolute;
 }
 
-.header .header__nav .header__nav--menu li{
+.header .header__nav .header__nav--menu li {
     margin: 15px 0;
     font-size: 1.2rem;
     font-weight: 400;
 }
 
-.header .header__nav .header__nav--menu li a{
+.header .header__nav .header__nav--menu li a {
     color: white;
     text-decoration: none;
 }
 
-.header .header__nav .header__nav--menu li a:hover{
+.header .header__nav .header__nav--menu li a:hover {
     color: white;
     text-decoration: underline;
     cursor: pointer;
 }
 
 .header .header__nav:hover .header__nav--menu,
-.header__nav--menu:hover{
+.header__nav--menu:hover {
     display: block;
 }
