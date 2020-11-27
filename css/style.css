@@ -1,3 +1,8 @@
+:root{
+    /*fonts*/
+    --primary-font: 'Poppins', sans-serif;
+}
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -9,7 +14,7 @@ html {
 }
 
 body {
-    font-family: 'Poppins', sans-serif;
+    font-family: var(--primary-font);
     background: linear-gradient(45deg, #FBDA61 0%, #FF5ACD 100%);
 }
 
@@ -75,3 +80,43 @@ body {
 .header__nav--menu:hover {
     display: block;
 }
+
+/*----------------------------------------------------------- section search*/
+
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.main .main__section--search{
+    max-width: 900px;
+    width: 100%;
+    height: 300px;
+    margin-top: 10em;
+}
+
+.main .main__section--search h2{
+    font-size: 3rem;
+    font-weight: 400;
+    color: white;
+}
+
+input[type=search]{
+    width: 70%;
+    margin-top: 3em;
+    padding: 1em;
+    font-size: 1.2rem;
+    font-family: var(--primary-font);
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 2px solid white;
+    border-radius: 25px;
+    color: white;
+    outline: none;
+}
+
+::placeholder{
+    color:white;
+}
+
