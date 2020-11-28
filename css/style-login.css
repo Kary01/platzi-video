@@ -1,0 +1,118 @@
+:root {
+    /*fonts*/
+    --primary-font: 'Poppins', sans-serif;
+}
+
+.main .main__login {
+    min-height: calc(100vh - 200px);
+}
+
+.main .main__login .login__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    min-height: 600px;
+    padding: 6em 3em;
+    font-size: 1.2rem;
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 2px solid white;
+    border-radius: 40px;
+    color: white
+}
+
+.main .login__container .login__container--form {
+    display: flex;
+    flex-direction: column;
+    margin: 3em 0;
+}
+
+.main .login__container .login__container--form .form--btn{
+    width: 80%;
+    height: 40px;
+    margin: auto;
+    background-color: rgba(255, 255, 255, 0.3);
+    border: 1px solid white;
+    border-radius: 15px;
+    font-family: var(--primary-font);
+    font-weight: bold;
+    letter-spacing: .1rem;
+    color: white;
+    cursor: pointer;
+}
+
+.main .login__container .login__container--form input {
+    margin-bottom: 3em;
+    padding: 0 0 1em 2em;
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid white;
+    color: white;
+    outline: none;
+}
+
+.main .login__container--form input::placeholder {
+    font-family: var(--primary-font);
+    font-size: 1.6rem;
+}
+
+.main .login__container .login__container--form label {
+    font-size: 1.2rem;
+}
+
+.main .login__container .login__container--remember {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1em;
+}
+
+.main .login__container .login__container--remember a {
+    color: white;
+    text-decoration: none;
+}
+
+.main .login__container .login__container--remember a:hover {
+    text-decoration: underline;
+}
+
+.main .login__container .login__container--social > div {
+    display: flex;
+    align-items: center;
+    margin: 1em 0;
+}
+
+.main .login__container .login__container--social >div > img {
+   width: 20px;
+   height: 20px;
+   margin-right: 1em;
+}
+
+.main .login__container .login__container--register a{
+    font-weight: bold;
+    font-size: 1.4rem;
+    color: white;
+    text-decoration: none;
+}
+
+.main .login__container .login__container--register a:hover{
+    text-decoration: underline;
+}
+
+.footer{
+    display: flex;
+    align-items: center;
+    height: 100px;
+    width: 100%;
+}
+
+.footer a{
+    padding-left: 2em;
+    font-size: 1.2rem;
+    color: white;
+    text-decoration: none;
+}
+
+.footer a:hover{
+    text-decoration: underline;
+}

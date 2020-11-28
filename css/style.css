@@ -15,7 +15,7 @@ html {
 
 body {
     font-family: var(--primary-font);
-    background: linear-gradient(45deg, #FBDA61 0%, #FF5ACD 100%);
+    background: linear-gradient(45deg, #FF5ACD 0%, #FBDA61  100%);
 }
 
 /*----------------------------------------------------------- header*/
@@ -42,8 +42,8 @@ body {
     align-items: center;
     width: 70px;
     color: white;
-    font-size: 1.2rem;
-    font-weight: 400;
+    font-size: 1.4rem;
+    font-weight: bold;
 }
 
 .header .header__nav .header__nav--profile img {
@@ -61,8 +61,8 @@ body {
 
 .header .header__nav .header__nav--menu li {
     margin: 15px 0;
-    font-size: 1.2rem;
-    font-weight: 400;
+    font-size: 1.4rem;
+    font-weight: bold;
 }
 
 .header .header__nav .header__nav--menu li a {
