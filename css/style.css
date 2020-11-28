@@ -91,11 +91,20 @@ body {
     text-align: center;
 }
 
+.main .main__section--title{
+    margin-left: 2em;
+    align-self: flex-start;
+    font-size: 1.6rem;
+    font-weight: 400;
+    letter-spacing: .1rem;
+    color: white;
+}
+
 .main .main__section--search {
     max-width: 900px;
     width: 100%;
     height: 200px;
-    margin-top: 10em;
+    margin: 10em 0;
 }
 
 .main .main__section--search h2 {
@@ -126,13 +135,19 @@ input[type=search] {
     width: 100%;
     padding: 30px;
     position: relative;
-    overflow: scroll;
+    overflow-x: scroll;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x proximity;
+}
+
+.main .main__section--carousel::-webkit-scrollbar{
+    display: none;
 }
 
 .main .main__section--carousel .carousel__container {
     /*seguirán los elementos alineandose a lo ancho*/
     white-space: nowrap;
-    margin: 7em 0;
+    margin: 4em 0;
     padding-bottom: 1em;
 }
 
@@ -158,24 +173,24 @@ input[type=search] {
     opacity: 0.3;
 }
 
-.main .main__section--carousel .carousel__container:hover .carousel__item:hover{
-    transform: scale(1.5);
+.main .main__section--carousel .carousel__container:hover .carousel__item:hover {
+    transform: scale(1.3);
     opacity: 1;
 }
 
-.main .carousel__item--details .icons{
+.main .carousel__item--details .icons {
     display: inline-block;
     width: 20px;
     height: 20px;
 }
 
-.main .carousel__item .carousel__item--img{
+.main .carousel__item .carousel__item--img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
 
-.main .carousel__item .carousel__item--details{
+.main .carousel__item .carousel__item--details {
     padding: 1em;
     position: absolute;
     top: 65%;
@@ -190,6 +205,35 @@ input[type=search] {
     transition: all 0.3s ease;
 }
 
-.main .carousel__item .carousel__item--details:hover{
+.main .carousel__item .carousel__item--details:hover {
     opacity: 1;
+}
+
+/*----------------------------------------------------------- footer*/
+.footer {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100px;
+    width: 100%;
+}
+
+.footer a {
+    padding-left: 2em;
+    font-size: 1.2rem;
+    color: white;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+/*----------------------------------------------------------- media queries*/
+@media screen and (max-width: 600px) {
+    .footer{
+        flex-direction: column; 
+        justify-content: center;
+        align-items: flex-start;
+    }
 }
