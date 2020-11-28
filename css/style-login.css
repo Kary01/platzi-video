@@ -99,6 +99,7 @@
     text-decoration: underline;
 }
 
+/*----------------------------------------------------------- footer*/
 .footer{
     display: flex;
     align-items: center;
